@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+  background-color: white;
+}
+
+img {
+  max-height: 100%;
+  border-radius: 20px;
+}
+
+h1 {
+  color: white;
+}
+
+.slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  overflow-x:hidden;
+  z-index: 5;
+    align-items: center;
+}
+
+.slide button {
+  padding: 2%;
+  margin: 5%;
+  font-size: 60px;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: white;
+}
+
+.modal-box {
+  max-width: 40%;
+  max-height: fit-content;
+  text-align: center;
+}
+
+.back {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+}
+
+.modal-box {
+  background-color: #171212;
+}
+
+@media (max-width:600px)  { 
+  .modal-box {
+    max-width: 100% !important;
+  }
+
+}
